@@ -1,0 +1,31 @@
+
+.ImageContainer img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform  0.5s ease;
+    animation: slideRight 1s ease-in-out;
+}
+
+.ImageContainer img:hover {
+    transform: scale(1.2); /* Use transform instead of scale for better animation control */
+}
+
+@keyframes slideRight {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(50px); /* Slide to the right */
+    }
+    50% {
+        transform: translateX(px); /* Slide to the right */
+      }
+      75% {
+        transform: translateX(-50px); /* Slide to the right */
+      }
+    100% {
+      transform: translateX(0); /* Return to original position */
+    }
+  }
